@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Projet3</title>
+    <meta name="viewport" content="width=screen.width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+
+
+
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="fas fa-bicycle"></a>
+        <a href="#">Velocity</a>
+      </nav>
+    </header>
+
+    <section class="background">
+      <div id="slider" >
+        <div>
+          <img id="imgslider" src="image/img1.jpg"/>
+        </div>
+        <div id="descriptionSlider">
+          <p><span>Bienvenue sur le site Velocity</span><br>le site de location de velo pour citoyen malin</p>
+        </div>
+        <div>
+          <div id="leftarrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div id="rightarrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="background">
+       <div id="mapid"></div>
+       <div>
+         <div id="partieDescriptionReservation">
+           <p class="title">Station sélectionnée</p>
+           <table id="descriptionStation">
+              <tbody>
+                <tr>
+                  <td>Nom :</td><td id="nomStation" class="champ"></td>
+                </tr>
+                <tr>
+                  <td>Localisation :</td><td id="adresse" class="champ"></td>
+                </tr>
+                <tr>
+                  <td>Nombre de velo :</td><td id="nombreVelo" class="champ"></td>
+                </tr>
+                <tr>
+                  <td>Nombre de velo disponibles :</td><td id="nombreDeVeloDisponible" class="champ"></td>
+                </tr>
+                <tr>
+                  <td>État de la station :</td><td id="etatStation" class="champ"></td>
+            </tbody>
+          </table>
+           <button id="reserver">Réserver</button>
+         </div>
+         <form id='form'>
+           <p class="titleform">Formulaire à remplir</p>
+           <p><label>Votre Nom :</label>  <input type="text" name="nom" id="nom"/></p>
+           <p><label>Votre Prenom :</label>  <input  type="text" name="prenom" id="prenom"/></p>
+           <p id="signature">Signature :</p>
+           <canvas id="canvas"></canvas>
+           <button id="confirmer" type='button'>confirmer</button>
+           <button id="annuler" type='button'>Annuler</button>
+       </form>
+       <p id='conf_Res'></p>
+       <p id='compteur'></p>
+     </div>
+
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script type="text/javascript" src="js/station.js"></script>
+    <script type="text/javascript" src="js/clients.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+  </body>

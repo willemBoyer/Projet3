@@ -1,0 +1,248 @@
+body
+{
+  margin:0;
+}
+
+@font-face
+{
+ font-family: "Roboto";
+ src: url("../font/Roboto-Regular.ttf");
+
+}
+
+*
+{
+  font-family:"Roboto",sans-serif;
+}
+
+.background
+{
+  background-color:#7ce644;
+}
+
+/* header */
+
+header
+{
+  background-color:#7ce644;
+  border:solid 6px #23b42f;
+}
+
+header nav
+{
+  width:30%;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:50px;
+}
+
+header nav a
+{
+  text-decoration: none;
+  color:white;
+  padding:2% 1% 2% 1%;
+}
+
+/*slider*/
+
+#imgslider
+{
+  width:100%;
+  height:650px;
+  border-bottom:solid 26px #23b42f;
+  background-color:#7ce644;
+}
+
+#leftarrow
+{
+  padding:50px 45px 50px 30px;
+  background-color:black;
+  position: absolute;
+  top:50%;
+  border-radius: 0 30px 30px 0;
+}
+
+#rightarrow
+{
+  background-color:black;
+  padding:50px 30px 50px 45px;
+  position: absolute;
+  top:50%;
+  right:0%;
+  border-radius: 30px 0 0 30px;
+}
+
+.fa-chevron-right, .fa-chevron-left
+{
+  color:white;
+  font-size:40px;
+}
+
+#descriptionSlider
+{
+  background-color:#7ce644;
+  position: relative;
+  left:8%;
+  bottom:250px;
+  width:35%;
+  padding:5px 20px 5px 20px;
+  border-radius:30px;
+  border:6px solid #23b42f;
+
+}
+
+#descriptionSlider p
+{
+  color:white;
+  font-size:20px;
+  text-align:center;
+}
+
+#descriptionSlider p span
+{
+  font-size:38px;
+  font-weight:600;
+}
+
+/*cartographie*/
+
+#reservation
+{
+  display:flex;
+  flex-direction:row;
+  padding-bottom:2%;
+}
+
+#mapid
+{
+  height:650px;
+  width:60%;
+  margin-left:5%;
+  border:solid 26px #23b42f;
+}
+
+/*description station*/
+li>li#nombreDeVeloDisponible
+{
+  padding:0;
+}
+#reservation>div:nth-child(2)
+{
+  margin-left:3%;
+  width:25%;
+}
+
+#partieDescriptionReservation
+{
+  background-color:white;
+  height:300px;
+  width:368px;
+  padding:3%;
+  border:solid 13px #23b42f;
+}
+
+#descriptionStation ul li
+{
+
+  padding: 4% 0 4% 0;
+  list-style: none;
+  font-size:12px;
+}
+
+#partieDescriptionReservation button
+{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  border:solid 6px #23b42f;
+  font-size:16px;
+  padding:2%;
+  color:white;
+  background-color: #7ce644;
+
+}
+
+.title
+{
+  text-align: center;
+  border: 2px grey solid;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:2%;
+  font-size:16px;
+}
+
+/*partie formulaire*/
+
+#form
+{
+  background-color:white;
+  border:solid 13px #23b42f;
+  width:368px;
+  height:290px;
+  padding:3%;
+  margin-top:5%;
+}
+
+.titleform
+{
+  text-align: center;
+  border: 2px grey solid;
+  width:60%;
+  margin-top:1%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:2%;
+  font-size:16px;
+}
+
+#form label
+{
+  margin-left:5%;
+  font-size:12px;
+}
+
+#signature
+{
+  margin-left:6%;
+  text-decoration:underline;
+  font-size:12px;
+}
+
+canvas
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border:2px grey solid;
+  border-radius:10px;
+  height:80px;
+  width:90%;
+}
+
+#form input
+{
+  width:50%;
+  font-size:12px;
+}
+
+#form input#nom
+{
+  margin-left:4%;
+}
+
+#form button
+{
+  width:40%;
+  margin:4.5%;
+  border:solid 6px #23b42f;
+  font-size:12px;
+  padding:2%;
+  color:white;
+  background-color: #7ce644;
+}
